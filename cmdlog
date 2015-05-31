@@ -1,0 +1,54 @@
+  678  rails new pr_event_apps
+  679  cd pr_event_apps
+  680  git init
+  681  git remote add origin git@github.com:tvcou/pr_event_apps.git
+  682  gp "first commit
+  683  "
+  684  gp "first commit"
+  685  vi Gemfile
+  686  bundle install
+  687  gp "add therubyracer"
+  688  ruby -v
+  689  rails -v
+  690  re
+  691  rails g controller welcome index
+  692  gp "rails g controller welcome index"
+  693  vi config/routes.rb
+  694  rs &
+  695  cat /tmp/s_log
+  696  rs &
+  697  cat /tmp/s_log
+  698  vi config/routes.rb
+  699  rs &
+  700  gp "vi config/routes.rb"
+  701  curl -o /tmp/bootstrap.zip https://github.com/twbs/bootstrap/releases/download/v3.3.4/bootstrap-3.3.4-dist.zip
+  702  cd /tmp/
+  703  unzip bootstrap.zip
+  704  curl -o /tmp/bootstrap.zip -L https://github.com/twbs/bootstrap/releases/download/v3.3.4/bootstrap-3.3.4-dist.zip
+  705  unzip bootstrap.zip
+  706  cd /home/rails_test/pr_event_apps/
+  707  cp /tmp/bootstrap-3.3.4-dist/css/bootstrap.min.css vendor/assets/stylesheets/
+  708  cp /tmp/bootstrap-3.3.4-dist/js/bootstrap.min.js vendor/assets/javascripts/
+  709  gp "cp bootstrap-3.3.4-dist"
+  710  vi app/assets/*/app*
+  711  gp "vi app/assets/*/app*"
+  712  vi app/views/layouts/application.html.erb
+  713  find /home/ -type f -name '*.erb'
+  714  find /home/ -type f -name 'application.html.erb'
+  715  find /home/ -type f -name 'application.html.erb' -exec grep Awesome {} \;
+  716  find /home/ -type f -name 'application.html.erb' -exec grep Awesome {} /tmp/a \;
+  717  cat /home/old/home/rails_test/rails_book_sample_code/chap06-08/awesome_events/app/views/layouts/application.html.erb
+  718  :q
+  719  cat app/views/layouts/application.html.erb
+  720  vi app/views/layouts/application.html.erb
+  721  cat app/views/layouts/application.html.erb
+  722  cat /home/old/home/rails_test/rails_book_sample_code/chap06-08/awesome_events/app/views/layouts/application.html.erb
+  723  vi app/views/layouts/application.html.erb
+  724  gp "vi app/views/layouts/application.html.erb"
+  725  history
+
+
+https://apps.twitter.com/
+
+http://lvh.me:3000
+http://lvh.me:3000/auth/twitter/callback
