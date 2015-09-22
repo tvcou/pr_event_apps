@@ -2,6 +2,10 @@
 class EventsController < ApplicationController
   before_action :authenticate, except: :show
 
+  def show
+    @event = Event.find(params[:id])
+  end
+
   def new
     @event = current_user.created_events.build
   end
@@ -9,7 +13,7 @@ class EventsController < ApplicationController
   def create
     @event = current_user.created_events.build(event_params)
     if @event.save
-      redirect_to @event, notice: '$B:n@.$7$^$7$?(B'
+      redirect_to @event, notice: '作成しました'
     else
       render :new
     end

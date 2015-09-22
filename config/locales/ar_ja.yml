@@ -1,11 +1,11 @@
 ja:
   activerecord:
     models:
-      event: $B%$%Y%s%H(B
+      event: イベント
     attributes:
       event:
-        name: $BL>A0(B
-        place: $B>l=j(B
-        start_time: $B3+;O;~4V(B
-        end_time: $B=*N;;~4V(B
-        content: $BFbMF(B
+        name: 名前
+        place: 場所
+        start_time: 開始時間
+        end_time: 終了時間
+        content: 内容
