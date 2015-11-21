@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>PrEventApps</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <header class="navbar navbar-default" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <%= link_to 'AwesomeEvents', root_path, class: 'navbar-brand' %>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to '$B%$%Y%s%H$r:n$k(B', new_event_path %></li>
-          <% if logged_in? %>
-            <li><%= link_to '$BB`2q(B', retire_user_path %></li>
-            <li><%= link_to '$B%m%0%"%&%H(B', logout_path %></li>
-          <% else %>
-            <li><%= link_to 'Twitter$B$G%m%0%$%s(B', '/auth/twitter' %></li>
-          <% end %>
-        </ul>
+  <head>
+    <title>PrEventApps</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to 'PrEventApps', root_path, class: 'navbar-brand' %>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to 'イベントを作る', new_event_path %></li>
+            <% if logged_in? %>
+              <li><%= link_to '退会', retire_user_path %></li>
+              <li><%= link_to 'ログアウト', logout_path %></li>
+            <% else %>
+              <li><%= link_to 'Twitterでログイン', '/auth/twitter' %></li>
+            <% end %>
+          </ul>
       </div>
     </div>
   </header>

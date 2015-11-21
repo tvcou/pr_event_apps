@@ -10,9 +10,13 @@
         主催者
       </div>
       <div class="panel-body">
-        <%= link_to(url_for_twitter(@event.owner)) do %>
-          <%= image_tag @event.owner.image_url %>
-          <%= "@#{@event.owner.nickname}" %>
+        <% if @event.owner %>
+          <%= link_to(url_for_twitter(@event.owner)) do %>
+            <%= image_tag @event.owner.image_url %>
+            <%= "@#{@event.owner.nickname}" %>
+          <% end %>
+        <% else %>
+          退会したユーザです
         <% end %>
       </div>
     </div>
